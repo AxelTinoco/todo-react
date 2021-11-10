@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-mountain {
+	background-image: url('/src/assets/mountain.jpg');
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+input:checked + label {
+	text-decoration: line-through;
+	text-decoration-color: red;
+  }
+  
