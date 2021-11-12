@@ -1,13 +1,10 @@
-import React from 'react'
-
-const AddToDoList = ({task}) => {
-    console.log('me renderice')
-    
-    return ( 
-        <div className='p-2 w-full h-12 '>
-            <p className='text-white'>{task}</p>
+const AddToDoList = () => {
+    return (
+        <div>
+            
         </div>
     )
 }
 
 export default AddToDoList
+

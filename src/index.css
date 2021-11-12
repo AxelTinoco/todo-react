@@ -20,7 +20,6 @@ Use a more readable tab size (opinionated).
 */
 
 html {
-	-moz-tab-size: 4;
 	tab-size: 4;
 }
 
@@ -604,14 +603,14 @@ video {
 .z-10 {
 	z-index: 10;
 }
-.col-span-10 {
-	grid-column: span 10 / span 10;
+.col-span-11 {
+	grid-column: span 11 / span 11;
+}
+.col-span-12 {
+	grid-column: span 12 / span 12;
 }
 .col-start-1 {
 	grid-column-start: 1;
-}
-.col-start-3 {
-	grid-column-start: 3;
 }
 .row-start-2 {
 	grid-row-start: 2;
@@ -632,6 +631,9 @@ video {
 .mr-2 {
 	margin-right: 0.5rem;
 }
+.mt-5 {
+	margin-top: 1.25rem;
+}
 .flex {
 	display: flex;
 }
@@ -647,11 +649,11 @@ video {
 .h-full {
 	height: 100%;
 }
+.h-1\/3 {
+	height: 33.333333%;
+}
 .h-14 {
 	height: 3.5rem;
-}
-.h-12 {
-	height: 3rem;
 }
 .max-h-full {
 	max-height: 100%;
@@ -661,6 +663,9 @@ video {
 }
 .w-full {
 	width: 100%;
+}
+.w-1\/5 {
+	width: 20%;
 }
 .w-\[80\%\] {
 	width: 80%;
@@ -689,6 +694,9 @@ video {
 }
 .flex-col {
 	flex-direction: column;
+}
+.place-items-end {
+	place-items: end;
 }
 .items-center {
 	align-items: center;
@@ -737,9 +745,9 @@ video {
 .border {
 	border-width: 1px;
 }
-.bg-green-200 {
+.bg-\[\#3c4f76\] {
 	--tw-bg-opacity: 1;
-	background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+	background-color: rgba(60, 79, 118, var(--tw-bg-opacity));
 }
 .bg-white {
 	--tw-bg-opacity: 1;
@@ -769,14 +777,40 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
+.bg-blue-600 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+.bg-green-300 {
+	--tw-bg-opacity: 1;
+	background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+.bg-mountain {
+	background-image: url('/src/assets/mountain.jpg');
+}
+.bg-cover {
+	background-size: cover;
+}
+.bg-center {
+	background-position: center;
+}
 .p-4 {
 	padding: 1rem;
 }
 .p-2 {
 	padding: 0.5rem;
 }
+.p-1 {
+	padding: 0.25rem;
+}
 .pl-10 {
 	padding-left: 2.5rem;
+}
+.pl-2 {
+	padding-left: 0.5rem;
+}
+.pl-1 {
+	padding-left: 0.25rem;
 }
 .text-3xl {
 	font-size: 1.875rem;
@@ -833,48 +867,32 @@ input:checked + label {
 
 @media (min-width: 768px) {
 
-	.md\:visible {
-		visibility: visible;
-	}
-
-	.md\:col-start-5 {
-		grid-column-start: 5;
+	.md\:col-start-1 {
+		grid-column-start: 1;
 	}
 
 	.md\:col-start-7 {
 		grid-column-start: 7;
 	}
 
-	.md\:col-start-8 {
-		grid-column-start: 8;
-	}
-
-	.md\:col-start-9 {
-		grid-column-start: 9;
-	}
-
-	.md\:col-start-1 {
-		grid-column-start: 1;
-	}
-
-	.md\:col-end-10 {
-		grid-column-end: 10;
+	.md\:col-end-7 {
+		grid-column-end: 7;
 	}
 
 	.md\:col-end-12 {
 		grid-column-end: 12;
 	}
 
-	.md\:col-end-6 {
-		grid-column-end: 6;
-	}
-
-	.md\:col-end-7 {
-		grid-column-end: 7;
+	.md\:col-end-13 {
+		grid-column-end: 13;
 	}
 
 	.md\:flex {
 		display: flex;
+	}
+
+	.md\:grid {
+		display: grid;
 	}
 
 	.md\:w-1\/2 {
