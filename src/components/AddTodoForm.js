@@ -59,7 +59,7 @@ const AddTodoForm = ({dispatch,show}) => {
         <FcInspection className='text-3xl absolute left-1'/>
         <input 
             type="text"
-            className='flex bg-black w-full p-2 pl-10 rounded-lg'
+            className='flex bg-black w-full p-2 pl-10 rounded-lg focus:ring-4 ring-blue-700 focus:outline-none'
             placeholder='Agregar Tarea...'
             onChange={handleInputChange}
             value={description}

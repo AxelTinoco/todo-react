@@ -1,3 +1,4 @@
+require("@lottiefiles/lottie-player");
 
 
 const CompleteTodoList = ({todos}) => {
@@ -16,7 +17,22 @@ const CompleteTodoList = ({todos}) => {
              
 
             {
-               todos && todos?.map(todo => (todo?.done === true ?  <li key={todo?.id}>{todo?.desc}</li> : null))
+               todos && todos?.map(todo => (todo?.done === true ?  
+               <li className="p-2 flex border w-[100%] text-blue-400 items-center justify-items-end bg-green-100"
+                key={todo?.id}>{todo?.desc}
+                <div className='flex justify-around'>
+        <lottie-player
+        className='flex'
+        style={{ width: '10%' , height:'10%', display:'flex',margin :'0'}}
+        autoplay
+        speed='1'
+        mode="normal"
+        src="https://assets6.lottiefiles.com/packages/lf20_pwjpnzxa.json"
+        />
+        
+        </div>
+                
+                </li> : null))
             }
             
 
