@@ -12,7 +12,7 @@
 }
 
 
-input:checked + label {
+.complete {
 	text-decoration: line-through;
 	text-decoration-color: red;
   }

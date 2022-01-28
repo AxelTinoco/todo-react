@@ -105,10 +105,10 @@ const AddToDo = () => {
 
                 <button
                 id="complete" 
-                className={`w-full h-1/3 rounded-l-3xl md:w-1/2 bg-blue-500`}
+                className={`w-full h-1/3 rounded-l-3xl md:w-1/2 bg-blue-500 relative z-10`}
                 onClick={handleShowViews}
                  >
-                <div className='transform -rotate-90'>Complete</div>
+                <div className='transform -rotate-90 absolute z-0'>Complete</div>
                 </button>
                 
 
@@ -164,8 +164,8 @@ const AddToDo = () => {
                                         key={todo.id}
                                         className="p-2 flex border w-full items-center justify-items-end relative"
                                     >
-                                        <input type="checkbox" name="" id={todo.id} className='mr-2' onClick={() => handleToggle(todo.id)} />
-                                        <label htmlFor={todo.id}>{todo.desc}</label>
+                                        
+                                        <label htmlFor={todo.id} className={todo.done && 'complete'} onClick={() => handleToggle(todo.id)}>{todo.desc}</label>
                                         <button
                                             className='bg-red-500 text-white p-2 absolute right-4 hover:bg-[#0077b6]'
                                             onClick={() => handleDeleteTask(todo.id)}
@@ -196,3 +196,6 @@ const AddToDo = () => {
 }
 
 export default AddToDo
+
+
+//<input type="checkbox" name="" id={todo.id} className='mr-2'  />
